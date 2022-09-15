@@ -24,7 +24,9 @@ class _screenTwoState extends State<screenTwo> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: Text("Information", style: TextStyle(fontSize: 30)),
+        ),
         body: Container(
             decoration: BoxDecoration(
                 image: DecorationImage(

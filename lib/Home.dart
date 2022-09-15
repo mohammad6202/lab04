@@ -16,6 +16,8 @@ class _HomeState extends State<Home> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
+            title: Text("Home Page",
+                style: TextStyle(fontSize: 30, fontFamily: 'DancingScript')),
             backgroundColor: Colors.amber,
           ),
           body: Container(
@@ -33,7 +35,10 @@ class _HomeState extends State<Home> {
                   ),
                   Text(
                     "Welcome To the Meditation Site",
-                    style: TextStyle(fontSize: 25, color: Colors.white),
+                    style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                        fontFamily: 'DancingScript'),
                   ),
                   SizedBox(
                     height: 50,
@@ -72,7 +77,18 @@ class _HomeState extends State<Home> {
                       label: Text(
                         "Information",
                         style: TextStyle(fontSize: 20),
-                      ))
+                      )),
+                  SizedBox(
+                    height: 330,
+                  ),
+                  Container(
+                      child: Text(
+                    "Calmness of mind is one of the beautiful jewels of wisdom",
+                    style: TextStyle(
+                        fontFamily: 'DancingScript',
+                        fontSize: 35,
+                        color: Colors.white),
+                  ))
                 ],
               )),
         ));

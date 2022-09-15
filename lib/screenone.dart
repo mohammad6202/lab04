@@ -20,6 +20,10 @@ class _screenOneState extends State<screenOne> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
+            title: Text(
+              "Places for Meditation",
+              style: TextStyle(fontSize: 30, fontFamily: 'DancingScript'),
+            ),
             backgroundColor: Colors.red[300],
           ),
           body: Container(
@@ -33,8 +37,11 @@ class _screenOneState extends State<screenOne> {
             child: Column(
               children: [
                 Text(
-                  "Here Are Some Places to meditate",
-                  style: TextStyle(fontSize: 25, color: Colors.white),
+                  "Here Are Some Places to meditate at",
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                      fontFamily: 'DancingScript'),
                 ),
                 CheckboxListTile(
                     title: Text(
